@@ -1,0 +1,18 @@
+{
+  "name": "ngx-mock-provider",
+  "version": "1.0.0",
+  "description": "ngx-mock-provider allows to easily mock any provider for Angular in unit tests",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stas-kh/ngx-mock-provider.git"
+  },
+  "author": "stas-kh",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.8.1"
+  }
+}
