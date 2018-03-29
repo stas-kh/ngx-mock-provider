@@ -1,6 +1,6 @@
 {
   "name": "ngx-mock-provider",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ngx-mock-provider allows to easily mock any provider for Angular in unit tests",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
