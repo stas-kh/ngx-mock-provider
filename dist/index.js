@@ -14,7 +14,7 @@ function MockProvider(options) {
         : {};
     return {
         provide: options.provider,
-        useValue: __assign({ fakeProvider: fakeProvider }, options.overwrite)
+        useValue: __assign({}, fakeProvider, options.overwrite)
     };
 }
 exports.MockProvider = MockProvider;
