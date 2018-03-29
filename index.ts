@@ -6,7 +6,7 @@ function MockProvider(options: { provider: any, methods?: string[], overwrite?: 
 	return {
 		provide: options.provider,
 		useValue: {
-			fakeProvider,
+			...fakeProvider,
 			...options.overwrite
 		}
 	};
