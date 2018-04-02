@@ -1,5 +1,8 @@
 # ngx-mock-provider
 ngx-mock-provider allows to easily mock any provider for Angular in unit tests
+```
+npm install --save-dev ngx-mock-provider
+```
 
 ### Usage
 ngx-mock-provider is designed to create isolated environment for your unit tests and replace your own services with mocked ones.
