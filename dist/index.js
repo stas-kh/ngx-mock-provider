@@ -1,4 +1,16 @@
 "use strict";
+/**
+ * Examples:
+ * 1. MockProvider({ provider: UserService, methods: ['getUserInfo', 'getUserRoles'] });
+ * 2. MockProvider({
+ *      provider: UserService,
+ *      methods: ['getUserInfo'],
+ *      overwrite: {
+ *        type: 'Admin',
+ *        getUserRoles: () => Observable.of(['Admin', 'User'])
+ *      }
+ *    });
+ */
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
