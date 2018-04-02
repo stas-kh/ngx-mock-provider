@@ -11,17 +11,18 @@ You just need to specify the `provider` that you wish to mock and array with met
 MockProvider({ provider: UserService, methods: ['getUserInfo'] })
 ``` 
 
-In case you need to have some methods mocked but several ones need your own implementation you could specify them in the property called `overwrite`:
+In case you need to have some methods mocked but another ones need to have own implementation you could specify them in the specific property called `overwrite`:
 ```
 MockProvider({
   provider: UserService,
   methods: ['getUserInfo'],
   overwrite: {
-    getUserRoles: () => {
-      return Observable.of(['Admin', 'User']);
-    },
     getSomeOtherInfo: () => {
-      // implementation
+      // your mocked implementation
+    },
+    getUserRoles: () => {
+      // for exapmple
+      return Observable.of(['Admin', 'User']);
     }
   }
 })
