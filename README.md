@@ -10,12 +10,12 @@ ngx-mock-provider is designed to create isolated environment for your unit tests
 It is inspired by [ng2-mock-component](https://github.com/cnunciato/ng2-mock-component) and can be used in addition to this package.
 
 You just need to specify the `provider` that you wish to mock and array with methods if any:
-```
+```javascript
 MockProvider({ provider: UserService, methods: ['getUserInfo'] })
 ``` 
 
 In case some methods should be just mocked but another ones need to have your own mocked implementation you could specify them in property `overwrite`:
-```
+```javascript
 MockProvider({
   provider: UserService,
   methods: ['getUserInfo'],
@@ -33,7 +33,7 @@ MockProvider({
 
 ### Why do you need it?
 If you install both [ng2-mock-component](https://github.com/cnunciato/ng2-mock-component) and [ngx-mock-provider](https://github.com/stas-kh/ngx-mock-provider) your unit tests can become much cleaner:
-```
+```javascript
 beforeEach(async(() => {
   TestBed.configureTestingModule({
     imports: [
